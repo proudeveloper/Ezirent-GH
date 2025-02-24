@@ -1,0 +1,776 @@
+
+:root { 
+    --main-color: #ff9000; /* Background color for the entire website, including individual sections */
+    --text-color: #213b52; /* Default color used for the majority of the text content across the entire website */
+    --dark-color: #1d1d1d; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --white-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --black-color: #000000; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+    --danger-color: #ff0000;
+    --input-border: #9FA6B2 ;
+  }
+
+  /* var(--text-color); */
+
+
+.hero h1.mainfront {
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 130px;
+    color: color-mix(in srgb, var(--heading-color), transparent 10%);
+}
+
+
+
+/* .overview {
+    width: 100%;
+    background-image: linear-gradient(transparent, var(--text-color) 40%), url("../../assets/img/bg/thenumbers.jpg");
+    font-size: 20px;
+} */
+
+
+
+.hero h1.mainfront span {
+    /* content: "Daily"; */
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 130px;
+    color: var(--main-color);
+    /* animation: words 33s infinite; */
+}
+
+
+
+.pay_rent_p p{
+    font-size: 1.4em;
+    color: var(--white-color);
+    font-weight: 400;
+    padding: 1em 2em;
+    background-color: color-mix(in srgb, var(--text-color), transparent 20%);
+    border: 2px solid color-mix(in srgb, var(--text-color), transparent 5%);
+    border-radius: 0 50px;
+}
+
+
+.pay_rent_p .icons{
+    margin-right: 20px;
+}
+
+.btn_listing_apply a{
+    width: 20em;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 0.6em 1.2em;
+    border-radius: 0.375em;
+    cursor: pointer;
+    color: var(--white-color);
+    text-align: center;
+    background: linear-gradient(120deg, darkmagenta, crimson, orange);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
+}
+
+.btn_listing_apply a:hover {
+    background-position: 0 0;
+}
+
+
+.btn_listing_apply .btn_apply {
+    margin-right: 4em;
+}
+
+
+@keyframes anime {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+  }
+
+
+.hanging_img img {
+    height: 400px;
+    border-radius: 20px;
+    background-color: linear-gradient(transparent, var(--text-color) 40%), var(--text-color);
+}
+
+
+.swipe_text_bottom_container {
+    margin-top: 200px;
+    height: 100px;
+    width: 100%;
+    background-color: color-mix(in srgb, var(--text-color), transparent 50%);
+    position: absolute;
+    color: var(--white-color);
+    border-radius: 0 0 5px 5px;
+    border-right: 1px solid var(--white-color) ;
+    border-left: 1px solid var(--white-color);
+    border-bottom: 2px solid var(--white-color);
+    padding: 10px 10px 10px 10px;
+}
+
+.swipe_container img {
+    margin: 0;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    border: 1px solid var(--white-color);
+    object-fit: cover;
+}
+
+
+.swipe_container {
+    margin: 0;
+    height: 300px;
+    position: relative;
+    display: grid;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+
+
+.swipe_text_bottom_container h4 {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+
+.swipe_text_bottom_container p {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+
+.owner_loc {
+    font-size: 9px;
+    color: var(--white-color);
+}
+
+.loc_icons {
+    font-size: 10px;
+    color: var(--main-color);
+}
+
+
+
+
+#hero.hero {
+    background-image: url("../../assets/img/bg/homes.jpeg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+
+
+.overview {
+    height: 10vh;
+    /* background-image: linear-gradient(transparent, var(--text-color) 60%), url("../../assets/img/bg/hero-1.png"); */
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+
+
+
+#hero.overview h1{
+    margin-top: 2em;
+    font-size: 3em;
+}
+
+
+
+.top_swiper_imgs {
+    color: transparent;
+    background-color: transparent;
+}
+
+.property_view {
+    font-size: 14px;
+    font-weight: 600;
+    color: color-mix(in srgb, var(--text-color), transparent 10%);
+    margin: 0 -9px;
+    width: 98%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* .property_view small {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.property_view a {
+    font-size: 11px;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    height: 24px;
+    margin: 0;
+    width: 100%;
+}
+
+.property_view a:hover {
+    color: var(--white-color);
+    background-color: color-mix(in srgb, var(--text-color), transparent 40%);
+    margin: 0;
+    width: 100%;
+}
+
+
+.rec_prop_icons {
+    font-size: 14px;
+    color: var(--main-color);
+    font-weight: 500;
+    margin-right: 4px;
+    /* overflow-wrap: break-word; */
+   
+}
+
+
+.prop_info {
+    font-size: 14px;
+    color: color-mix(in srgb, var(--text-color), transparent 10%);
+    font-weight: 500;
+}
+
+.text_name {
+  white-space: nowrap; 
+  width: 10.4em; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+.text_title {
+    white-space: nowrap; 
+    width: 20em; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+
+
+.prop_info a {
+    font-size: 14px;
+    color: color-mix(in srgb, var(--text-color), transparent 10%);
+    background-color: color-mix(in srgb, var(--text-color), transparent 90%);
+    padding: 8px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid color-mix(in srgb, var(--text-color), transparent 60%);
+    margin-right: 10px;
+}
+
+.isotope-container .card-title {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.isotope-container img {
+    margin: 0;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+
+
+.why_ezirent_left {
+    height: 800px;
+    background: url("../../assets/img/misc/C4VCBbc7.png") center top / cover no-repeat !important;
+}
+
+
+.why_ezirent_right {
+    height: 800px;
+    background: url("../../assets/img/bg/whyfrontbg.jpg") center top / cover no-repeat !important;
+}
+
+.why_ezirent_right li {
+    font-size: 20px;
+    color: color-mix(in srgb, var(--text-color), transparent 10%);
+}
+
+
+.why_ezirent_right span {
+    color: var(--main-color);
+}
+
+
+.why_icons {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    padding: 5px;
+    background-color: color-mix(in srgb, var(--main-color), transparent 80%);
+    border-radius: 30px;
+    color: var(--main-color);
+}
+
+.learn_more_btn .icons {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    font-size: 10px;
+    background-color: var(--dark-color);
+    border-radius: 30px;
+    color: var(--main-color);
+}
+
+.list_property_main {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+
+
+.list_property_main h2{
+    color: var(--white-color);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.list_property_main span{
+    color: var(--main-color);
+}
+
+
+.list_property_main p{
+    font-size: 20px;
+    color: var(--white-color);
+}
+
+
+.list_property_main p span{
+    color: var(--main-color);
+}
+
+
+
+.list_property_main .card{
+    height: 300px;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.list_property_main .card h3{
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+.list_property_main .card p{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.list_property_main .card .icons{
+    color: var(--text-color);
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+
+.list_property_main img{
+    width: 180px;
+    height: 250px;
+}
+
+.list_property_main .left_img{
+    margin-top: 150px;
+    margin-right: -20px;
+    margin-left: 50px;
+}
+
+
+
+
+
+.the_numbers {
+    /* margin: 0; */
+    /* height: 200px; */
+    width: 100%;
+    background-image: linear-gradient(transparent, var(--text-color) 40%), url("../../assets/img/bg/thenumbers.jpg");
+    font-size: 20px;
+}
+
+
+
+/* .the_numbers div {
+    color: var(--input-border);
+} */
+
+.the_numbers span {
+    color: var(--main-color);
+}
+
+
+.the_numbers i {
+    font-size:40px;
+}
+
+.num_icons {
+    /* margin-bottom: 3px; */
+    width: 60px;
+    height: 30px;
+    font-size: 40px;
+    padding: 10px;
+    background-color: color-mix(in srgb, var(--input-border), transparent 70%);
+    /* position: relative; */
+    justify-content: center;
+    border-radius: 80px;
+    color: var(--input-border);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.hero p span {
+    color: var(--main-color);
+    margin: 5px 0 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+
+  .hero .btn-get-started {
+    color: var(--main-color);
+    background: var(--dark-color);
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 80px 12px 80px;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0 2px 2px color-mix(in srgb, var(--white-color), transparent 80%);
+  }
+  
+  .hero .btn-get-started:hover {
+    color: var(--main-color);
+    background: var(--black-color);
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 9.5px 79.5 11.5px 79.5px;
+    border-radius: 10px;
+    transition: .5s;
+    box-shadow: 0 .3px .3px color-mix(in srgb, var(--white-color), transparent 80%);
+  }
+
+
+
+
+
+
+
+  /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /* TESTIMONIALS AND STAR RATINGS */
+  .rating-box {
+    position: relative;
+    background: var(--white-color);
+    padding: 25px 50px 35px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px color-mix(in srgb, var(--black-color), transparent 85%);
+  }
+
+  .rating-box .stars {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .stars {
+    color: color-mix(in srgb, var(--black-color), transparent 90%);
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .stars .active {
+    color: var(--main-color);
+  }
+
+
+.testmonials {
+    color: var(--text-color);
+}
+
+.testmonials span {
+    color: var(--main-color);
+}
+
+
+
+  /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*  /////////////////////////////    FOOTER     ////////////////////////////  */
+.main_footer {
+    background-color: var(--text-color);
+} 
+
+.footer-bottom {
+    background-color: var(--black-color);
+} 
+
+.footer-bottom-content {
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0;
+} 
+
+.social-icons {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+
+.footer_logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0;
+} 
+
+.footer_logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+} 
+
+
+
+
+
+
+  /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*  /////////////////////////////    CEO's REMARKS     ////////////////////////////  */
+  .ceo_ramarks {
+    font-size: 200px;
+  }
+
+.ceo_ramarks img {
+    margin: 0;
+    height: 520px;
+    width: 100%;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+  /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*  /////////////////////////////   ACCORDION  FAQ     ////////////////////////////  */
+  .faq .content span {
+    color: var(--main-color);
+  }
+  
+.accordion_style h2,
+.accordion_style a{
+    color:var(--main-color);
+}
+.accordion_style .btn-link {
+    font-weight: 400;
+    color: var(--main-color);
+    background-color: transparent;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: bold;
+	padding-left: 25px;
+}
+
+
+.accordion_style .btn-link:focus {
+    outline: none !important;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    box-shadow: none;
+}
+
+  
+.accordion_style .btn-link .show {
+    color: var(--white-color);
+    background-color: var(--main-color);
+  }
+
+
+.accordion_style .btn-link:hover {
+background-color: color-mix(in srgb, var(--main-color), transparent 20%);
+/* background-color: var(--black-color); */
+color: var(--black-color);
+}
+
+
+.accordion_style .card-body {
+    border-top: 2px solid var(--main-color);
+}
+
+.accordion_style .card-header .btn.collapsed .fa.main{
+	display:none;
+}
+
+.accordion_style .card-header .btn .fa.main{
+	background: var(--main-color);
+    padding: 13px 11px;
+    color: var(--white-color);
+    width: 35px;
+    height: 41px;
+    position: absolute;
+    left: -1px;
+    top: 10px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+	display:block;
+}
+
+.accordion_style .accordion-item .show{
+	border: 1px solid var(--main-color);
+}
+
+
+
+
+
+
+  /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*  /////////////////////////////   RENT CALCULATOR     ////////////////////////////  */
+
+
+.buy_btns {
+    font-size: 12px;
+    margin-top: 50px;
+}
+
+.buy_btns button {
+    font-size: 12px;
+}
+
+.buy_btns .apply_btn{
+    font-size: 11px;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border-radius: 10px;
+    border: none !important;
+}
+
+.buy_btns .apply_btn:hover {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border-radius: 15px;
+    border: none !important;
+}
+
+.check_affordability_btn {
+    font-size: 11px;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border-radius: 10px;
+    border: none !important;
+    box-shadow: 0 2px 2px color-mix(in srgb, var(--black-color), transparent 80%);
+}
+
+.check_affordability_btn:hover {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border-radius: 15px;
+    border: none !important;
+}
+
+.check_affordability_btn:active {
+    color: var(--white-color);
+    background-color: var(--main-color);
+}
+
+.check_affordability_btn:focus {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    /* box-shadow: 0 2px 2px color-mix(in srgb, var(--black-color), transparent 80%); */
+}
+
+
+
+
+
+  /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*  ///////////////////////////////////////   CORE      VALUES     //////////////////////////////////////  */
+
+.core_values {
+    margin-top: 2em;
+}
+
+.core_values img {
+    margin: 0;
+    height: 30vh;
+    /* width: 100%; */
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+  /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*  /////////////////////////////              LOGIN       SCREEN           ////////////////////////////  */
+
+  .login_btn{
+    font-size: 1em;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border-radius: 0.3em;
+    border: none !important;
+}
+
+.login_btn:hover {
+    color: var(--white-color);
+    background-color: var(--text-color);
+    border-radius: 0.5em;
+    border: none !important;
+}
+
